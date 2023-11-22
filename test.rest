@@ -1,0 +1,23 @@
+POST http://127.0.0.1:8000/api/v1/users/register
+Content-Type: application/json
+
+{ "username": "abilio", "password": "Pass1234!", "password2": "Pass1234!", "email": "abilio10@gmail.com" }
+
+###
+
+POST http://127.0.0.1:8000/api/v1/users/login
+Content-Type: application/json
+
+{ "username": "abilio", "password": "Pass1234!" }
+
+###
+
+GET http://127.0.0.1:8000/api/v1/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwNzY1NDA3LCJpYXQiOjE3MDA2NzkwMDcsImp0aSI6ImZhMDk5YThkMGI3ZjQ5NjRiZDUzYTNkYzk1NWEzZmVjIiwidXNlcl9pZCI6NH0.51VmN6uztUALimZvowp9yvVk5v-XavmlpBRsiernKs0
+
+###
+
+POST http://127.0.0.1:8000/api/v1/users/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwNzY1NDA3LCJpYXQiOjE3MDA2NzkwMDcsImp0aSI6ImZhMDk5YThkMGI3ZjQ5NjRiZDUzYTNkYzk1NWEzZmVjIiwidXNlcl9pZCI6NH0.51VmN6uztUALimZvowp9yvVk5v-XavmlpBRsiernKs0
