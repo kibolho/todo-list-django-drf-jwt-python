@@ -21,3 +21,30 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiY
 POST http://127.0.0.1:8000/api/v1/users/logout
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwNzY1NDA3LCJpYXQiOjE3MDA2NzkwMDcsImp0aSI6ImZhMDk5YThkMGI3ZjQ5NjRiZDUzYTNkYzk1NWEzZmVjIiwidXNlcl9pZCI6NH0.51VmN6uztUALimZvowp9yvVk5v-XavmlpBRsiernKs0
+
+
+###
+
+POST http://127.0.0.1:8000/api/v1/todos/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwNzY1NDA3LCJpYXQiOjE3MDA2NzkwMDcsImp0aSI6ImZhMDk5YThkMGI3ZjQ5NjRiZDUzYTNkYzk1NWEzZmVjIiwidXNlcl9pZCI6NH0.51VmN6uztUALimZvowp9yvVk5v-XavmlpBRsiernKs0
+
+{ 
+	"title": "Shop 2 Apples"
+}
+
+###
+
+PATCH http://127.0.0.1:8000/api/v1/todos/1/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwNzY1NDA3LCJpYXQiOjE3MDA2NzkwMDcsImp0aSI6ImZhMDk5YThkMGI3ZjQ5NjRiZDUzYTNkYzk1NWEzZmVjIiwidXNlcl9pZCI6NH0.51VmN6uztUALimZvowp9yvVk5v-XavmlpBRsiernKs0
+
+{ 
+	"is_completed": true
+}
+
+###
+
+GET http://127.0.0.1:8000/api/v1/todos/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwNzY1NDA3LCJpYXQiOjE3MDA2NzkwMDcsImp0aSI6ImZhMDk5YThkMGI3ZjQ5NjRiZDUzYTNkYzk1NWEzZmVjIiwidXNlcl9pZCI6NH0.51VmN6uztUALimZvowp9yvVk5v-XavmlpBRsiernKs0
